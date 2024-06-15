@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity() {
     fun authenticate(user: String, password: String){
 
         if (user.isEmpty() && password.isEmpty())
-            Toast.makeText(this, "Por favor, preencha todos os campos!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Ei, preencha todos os campos!", Toast.LENGTH_SHORT).show()
         else if(user.isEmpty())
-            Toast.makeText(this, "Usuário não pode ser vazio!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Usuário não pode estar vazio!", Toast.LENGTH_SHORT).show()
         else if(password.isNullOrEmpty())
-            Toast.makeText(this, "Senha não pode ser vazia!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Senha não pode estar vazia!", Toast.LENGTH_SHORT).show()
         else if(user != "admin" || password != "admin")
             Toast.makeText(this, "Usuário ou senha incorretos!", Toast.LENGTH_SHORT).show()
         else{
